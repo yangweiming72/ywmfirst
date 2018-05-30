@@ -1,0 +1,79 @@
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>平安银行接口测试</title>
+</head>
+<script type='text/javascript' language='javascript' src="js/jquery.js"></script>
+<script type='text/javascript' language='javascript' src="js/index.js"></script>
+<script type='text/javascript' language='javascript'>
+	function updateValidateCode()
+	{
+		getverifytime = new Date();
+		document.getElementById('validatecode').src="../include/GetVerifyImg.php?d="+getverifytime;
+		return false;
+	}
+	
+	<? if ($msg){ ?>
+		alert('<?=$msg?>');
+	<? } ?>
+</script>
+<link href="/a/css/css.css" rel="stylesheet" type="text/css" />
+<body>
+<div class="page">
+	  <div class="log_aa">
+      		<div class="log_aa1">
+                  <div class="log_aa6">
+                  		<div class="pass_aa2">
+                              <div class="pass_aa3">平安银行接口测试</div>
+                        </div>
+                  		<div class="log_aa7">
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6000.php">注册开户</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6066.php">绑定银行卡(本行)</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6055.php">绑定银行卡(他行)</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6056.php">充值</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6111.php">提现</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6006.php">转帐</a></div>
+                              </div>
+                        	  <!--div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6061.php">转帐结果查询</a></div>
+                              </div-->
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6110.php">交易结果查询</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6050.php">查询转帐充值明细</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6072.php">查询银行时间段内交易明细</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6073.php">查询银行时间段内清分提现明细</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6092.php">根据会员代码查询会员子账号</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6114.php">查询子账号历史余额及待转可提现状态信息</a></div>
+                              </div>
+                        	  <div class="log_aa8">
+                              		<div class="log_aa9"><a href="bank6108.php">查询银行在途清算结果</a></div>
+                              </div>
+                        </div>
+                  </div> 
+            </div>
+      </div>
+</div>                  
+</body>
+</html>
